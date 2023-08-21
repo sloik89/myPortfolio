@@ -2,7 +2,10 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { TopLeftImg, Nav, Header } from "./components";
 
+import { AnimatePresence, motion } from "framer-motion";
 import { Home, About, Testimonials, Contact, Services, Work } from "./page";
+import { Transition } from "./components";
+
 function App() {
   return (
     <div className="page">

@@ -7,6 +7,8 @@
 :root {
   --bgc-clr: #1f0761;
   --txt-clr: #fff;
+  --big-screen: 900px;
+  --nav-bg: rgba(255, 255, 255, 0.2);
 }
 body {
   font-family: "Sora", sans-serif;
@@ -17,6 +19,13 @@ img {
 }
 a {
   text-decoration: none;
+}
+button {
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 .page {
   background-color: var(--bgc-clr);
@@ -36,9 +45,28 @@ a {
   opacity: 0.5;
   z-index: -1;
 }
+/* animation stars */
+.stars {
+  animation: apear infinite alternate-reverse ease-in-out 1.5s;
+}
+@keyframes apear {
+  0% {
+    transform: scale(0) translateX(0);
+  }
+  100% {
+    transform: scale(1);
+    color: yellow;
+  }
+}
+/* global classes */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .nav {
   /* z-index: 2; */
-  font-size: 55px;
+  font-size: 25px;
   color: var(--txt-clr);
 }
 .nav a {
