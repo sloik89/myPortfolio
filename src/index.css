@@ -6,9 +6,13 @@
 }
 :root {
   --bgc-clr: #1f0761;
+  --bgc-clr-home: #130731;
   --txt-clr: #fff;
   --big-screen: 900px;
   --nav-bg: rgba(255, 255, 255, 0.2);
+  --transition-1-clr: #1b084e;
+  --transition-2-clr: #16083d;
+  --transition-3-clr: #0f0629;
 }
 body {
   font-family: "Sora", sans-serif;
@@ -46,7 +50,7 @@ button {
   left: 0;
   z-index: 0;
   opacity: 0.5;
-  z-index: -1;
+  z-index: 1;
 }
 /* animation stars */
 .stars {
@@ -82,13 +86,3 @@ button {
 }
 
 /* motion */
-.motion-1 {
-  position: fixed;
-
-  background-color: red;
-
-  top: 0;
-  bottom: 0;
-
-  right: 100%;
-}

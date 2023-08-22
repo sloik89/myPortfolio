@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import nav from "../utilis/nav";
 import Wrapper from "../wrappers/Nav";
@@ -14,7 +14,7 @@ const Nav = () => {
     if (isDisabled) {
       interval = setTimeout(() => {
         setIsDisabled(false);
-      }, 800);
+      }, 900);
     }
     return () => {
       clearInterval(interval);

@@ -14,8 +14,9 @@ const Layouts = () => {
           <motion.div key={location.pathname}>
             <Transition />
             <App />
-            <Outlet />
           </motion.div>
+          {/* Outlet behind motion div otherwise you see route before animation */}
+          <Outlet />
         </AnimatePresence>
       </div>
     </>

@@ -8,6 +8,7 @@ const Wrapper = styled.nav`
   width: 100%;
   bottom: 0;
   left: 0;
+  z-index: 4;
   padding: 1rem 2rem;
   .text-accent {
     color: red;
