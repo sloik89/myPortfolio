@@ -34,6 +34,9 @@ button {
   position: relative;
   z-index: 1;
 }
+.full-page {
+  min-height: 100vh;
+}
 .top-left-img {
   position: absolute;
   width: 400px;
@@ -76,4 +79,16 @@ button {
   .top-left-img {
     width: 600px;
   }
+}
+
+/* motion */
+.motion-1 {
+  position: fixed;
+
+  background-color: red;
+
+  top: 0;
+  bottom: 0;
+
+  right: 100%;
 }

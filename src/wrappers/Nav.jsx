@@ -15,6 +15,9 @@ const Wrapper = styled.nav`
   a {
     position: relative;
   }
+  a.disabled {
+    pointer-events: none;
+  }
 
   .tooltip {
     position: absolute;

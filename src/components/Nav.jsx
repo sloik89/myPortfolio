@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import nav from "../utilis/nav";
 import Wrapper from "../wrappers/Nav";
@@ -6,7 +6,20 @@ import { BsMoonStarsFill } from "react-icons/bs";
 import { useLocation } from "react-router-dom";
 const Nav = () => {
   const location = useLocation();
-  console.log(location);
+  const [isDisabled, setIsDisabled] = useState(true);
+  useEffect(() => {
+    console.log("first");
+    // time to change block links
+    let interval;
+    if (isDisabled) {
+      interval = setTimeout(() => {
+        setIsDisabled(false);
+      }, 800);
+    }
+    return () => {
+      clearInterval(interval);
+    };
+  }, [location.pathname]);
   return (
     <Wrapper className="nav">
       {nav.map((item, idx) => {
@@ -14,9 +27,9 @@ const Nav = () => {
 
         return (
           <Link
-            className={`flex-center ${location.pathname === path} ${
+            className={`flex-center ${
               location.pathname === path ? "text-accent" : ""
-            }`}
+            } ${isDisabled && "disabled"}`}
             to={path}
             key={idx}
           >
