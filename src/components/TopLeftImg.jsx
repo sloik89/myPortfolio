@@ -1,10 +1,11 @@
 import React from "react";
-import img from "../assets/splash.png";
+import img from "../assets/paint.png";
 const TopLeftImg = () => {
   return (
-    <div className="top-left-img">
-      <img src={img} alt="" />
-    </div>
+    <div
+      style={{ backgroundImage: `url('${img}')` }}
+      className="top-left-img"
+    ></div>
   );
 };
 

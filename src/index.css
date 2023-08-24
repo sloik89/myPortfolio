@@ -9,6 +9,7 @@
   --bgc-clr-home: #130731;
   --txt-clr: #fff;
   --big-screen: 900px;
+  --text-accent-clr: rgb(204, 23, 23);
   --nav-bg: rgba(255, 255, 255, 0.2);
   --transition-1-clr: #1b084e;
   --transition-2-clr: #16083d;
@@ -42,16 +43,61 @@ button {
   min-height: 100vh;
 }
 .top-left-img {
+  background-color: transparent;
   position: absolute;
-  width: 400px;
-  height: 300px;
-  transform: translate(-50%, -20%);
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -50%);
   top: 0;
   left: 0;
   z-index: 0;
-  opacity: 0.5;
+  opacity: 0.1;
   z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+/* typografy */
+.header-title {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.text-accent {
+  color: var(--text-accent-clr);
+}
+.main-desc {
+  max-width: 600px;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2;
+}
+@media screen and (min-width: 700px) {
+  .top-left-img {
+    width: 600px;
+  }
+  .header-title {
+    font-size: 2.5rem;
+  }
+  .main-desc {
+    font-size: 1.2rem;
+  }
+  body .home-btn .project-btn {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .header-title {
+    font-size: 3.5rem;
+  }
+  .main-desc {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .top-left-img {
+    width: 800px;
+  }
+}
+/* end of typografy */
 /* animation stars */
 .stars {
   animation: apear infinite alternate-reverse ease-in-out 1.5s;
@@ -78,6 +124,18 @@ button {
 }
 .nav a {
   color: var(--txt-clr);
+}
+.particle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 2;
+}
+#tsparticles {
+  height: 100%;
 }
 @media screen and (min-width: 900px) {
   .top-left-img {

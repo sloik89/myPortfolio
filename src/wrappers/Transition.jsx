@@ -6,7 +6,7 @@ const Wrapper = styled.div`
     top: 0;
     bottom: 0;
     right: 100%;
-    z-index: 3;
+    z-index: 10;
   }
   .motion-2 {
     position: fixed;
@@ -14,10 +14,10 @@ const Wrapper = styled.div`
     bottom: 0;
     right: 100%;
     background-color: var(--transition-2-clr);
-    z-index: 2;
+    z-index: 9;
   }
   .motion-3 {
-    z-index: 1;
+    z-index: 8;
     position: fixed;
     top: 0;
     bottom: 0;
