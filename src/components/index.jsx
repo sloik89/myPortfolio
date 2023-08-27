@@ -4,4 +4,15 @@ import Nav from "./Nav";
 import Transition from "./Transition";
 import ProjectBtn from "./ProjectBtn";
 import ParticleContainer from "./ParticleContainer";
-export { TopLeftImg, Header, Nav, Transition, ProjectBtn, ParticleContainer };
+import Circle from "./Circle";
+import Socials from "./Socials";
+export {
+  TopLeftImg,
+  Header,
+  Nav,
+  Transition,
+  ProjectBtn,
+  ParticleContainer,
+  Circle,
+  Socials,
+};

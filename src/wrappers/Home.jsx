@@ -52,7 +52,7 @@ const Wrapper = styled.section`
       right: 20%;
       position: absolute;
       z-index: 2;
-      width: 60%;
+      width: 50%;
     }
 
     .flex-container {
