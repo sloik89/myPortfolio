@@ -36,7 +36,14 @@ button {
   border: none;
   cursor: pointer;
 }
-
+.circle {
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  height: 200px;
+  width: 200px;
+  animation: circleAnimate 2s ease-in-out infinite alternate;
+}
 .top-left-img {
   background-color: transparent;
   position: absolute;
@@ -53,7 +60,7 @@ button {
 }
 /* typografy */
 .header-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 1px;
   line-height: 1.5;
 }
@@ -79,7 +86,12 @@ button {
   body .home-btn .project-btn {
     width: 250px;
   }
+  .circle {
+    width: 250px;
+    height: 250px;
+  }
 }
+
 @media screen and (min-width: 1500px) {
   .header-title {
     font-size: 3.5rem;
@@ -160,17 +172,20 @@ button {
 #tsparticles {
   height: 100%;
 }
-.circle {
+.h-full {
+  min-height: 100vh;
+}
+.bolt-img {
   position: absolute;
-  bottom: -100px;
-  right: -250px;
-  height: -250px;
-  width: 500px;
-  animation: circleAnimate 2s ease-in-out infinite alternate;
+  bottom: -50px;
+  width: 400px;
+  left: 0;
+  transform: translateX(-60%);
+
+  filter: hue-rotate(320deg);
+  animation: circleAnimate 1.4s ease-in-out infinite alternate;
 }
-.about {
-  /* min-height: 100%; */
-}
+/* end of global classes */
 @keyframes circleAnimate {
   0% {
     filter: drop-shadow(0px 0px 0px var(--text-accent-clr)) opacity(0.3);
@@ -179,7 +194,6 @@ button {
     filter: drop-shadow(26px 26px 40px var(--text-accent-clr)) opacity(0.6);
   }
 }
-/* end of global classes */
 @media screen and (min-width: 900px) {
   .top-left-img {
     width: 600px;

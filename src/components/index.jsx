@@ -6,6 +6,7 @@ import ProjectBtn from "./ProjectBtn";
 import ParticleContainer from "./ParticleContainer";
 import Circle from "./Circle";
 import Socials from "./Socials";
+import ServicesSlider from "./ServicesSlider";
 export {
   TopLeftImg,
   Header,
@@ -15,4 +16,5 @@ export {
   ParticleContainer,
   Circle,
   Socials,
+  ServicesSlider,
 };

@@ -3,6 +3,9 @@ import Wrapper from "../wrappers/About.jsx";
 import { Circle } from "../components/";
 import { aboutData } from "../utilis/aboutData.jsx";
 import avatar from "../assets/person2.png";
+import { motion } from "framer-motion";
+import CountUp from "react-countup";
+import { fadeIn } from "../utilis/variants.jsx";
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
@@ -19,7 +22,26 @@ const About = () => {
             collaborated on digital products for business and consumer use.
           </p>
         </div>
+        <div className="about-counters">
+          <div className="count">
+            <CountUp start={0} end={10} duration={5} delay={1.5} /> +
+            <p>Years of expirience</p>
+          </div>
+          <div className="count">
+            <CountUp start={0} end={231} duration={5} delay={1.5} /> +
+            <p>Satisfied Clients</p>
+          </div>
+          <div className="count">
+            <CountUp start={0} end={601} duration={5} delay={1.5} /> +
+            <p>Finished Projects</p>
+          </div>
+          <div className="count">
+            <CountUp start={0} end={7} duration={5} delay={1.5} /> +
+            <p>Winning Awards</p>
+          </div>
+        </div>
       </div>
+
       <div className="about-container">
         <div className="about-nav">
           {aboutData.map((item, idx) => {
@@ -54,9 +76,15 @@ const About = () => {
           })}
         </div>
       </div>
-      <div className="img-about">
+      <motion.div
+        variants={fadeIn("right", 0.9)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="img-about"
+      >
         <img src={avatar} alt="" />
-      </div>
+      </motion.div>
     </Wrapper>
   );
 };

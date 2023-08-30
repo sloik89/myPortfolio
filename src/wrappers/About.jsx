@@ -3,6 +3,7 @@ const Wrapper = styled.div`
   width: 90%;
   border: 2px solid red;
   height: 100vh;
+
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -14,10 +15,12 @@ const Wrapper = styled.div`
   overflow: hidden;
   .img-about {
     position: absolute;
-    width: 500px;
-    bottom: -220px;
-    left: -250px;
+    width: 50vh;
+    max-width: 900px;
+    bottom: -420px;
+    left: -25vh;
     display: none;
+    z-index: -1;
   }
   .about-text-contaniner {
     h2 {
@@ -91,21 +94,59 @@ const Wrapper = styled.div`
     align-items: center;
     gap: 1rem;
   }
+  .about-counters {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    display: none;
+    justify-content: space-between;
+    .count {
+      color: var(--text-accent-clr);
+      flex: 1;
+      text-align: center;
+      span {
+      }
+      p {
+        color: var(--txt-clr);
+        font-size: 1.2rem;
+      }
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    max-width: 1800px;
+
+    .about-counters {
+      display: flex;
+    }
     .about-container {
       flex: 1;
+      align-self: center;
+      max-width: 900px;
     }
     .about-info {
       flex: 1;
-      border: 1px solid red;
+      padding: 2rem;
+      max-width: 900px;
     }
     .about-text-contaniner {
       h2 {
         font-size: 4rem;
         text-align: left;
       }
+      p {
+        text-align: left;
+      }
+    }
+    .about-counters {
+      font-size: 3rem;
+    }
+  }
+  @media screen and (min-width: 1900px) {
+    .img-about {
+      display: block;
     }
   }
 `;
