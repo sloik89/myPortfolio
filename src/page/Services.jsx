@@ -10,7 +10,7 @@ const Services = () => {
           <h2 className="header-title">
             My Services <span className="text-accent">.</span>{" "}
           </h2>
-          <p className="">
+          <p className="services-p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
             corporis repellendus, veritatis voluptatem temporibus facilis
             eveniet molestias vel harum a.

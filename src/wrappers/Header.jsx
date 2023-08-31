@@ -6,8 +6,7 @@ const Wrapper = styled.div`
   top: 0;
   left: 0;
   z-index: 6;
-  gap: 2rem;
-
+  gap: 1rem;
   margin: 0 auto;
   & > * {
     flex: 1;
@@ -17,6 +16,7 @@ const Wrapper = styled.div`
 
     .logo {
       margin-left: 2rem;
+      width: 150px;
     }
     .socials {
       flex: 0;

@@ -47,8 +47,8 @@ button {
 .top-left-img {
   background-color: transparent;
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   transform: translate(-50%, -50%);
   top: 0;
   left: 0;
@@ -73,37 +73,7 @@ button {
   text-align: center;
   line-height: 2;
 }
-@media screen and (min-width: 700px) {
-  .top-left-img {
-    width: 600px;
-  }
-  .header-title {
-    font-size: 2.5rem;
-  }
-  .main-desc {
-    font-size: 1.2rem;
-  }
-  body .home-btn .project-btn {
-    width: 250px;
-  }
-  .circle {
-    width: 250px;
-    height: 250px;
-  }
-}
 
-@media screen and (min-width: 1500px) {
-  .header-title {
-    font-size: 3.5rem;
-  }
-  .main-desc {
-    font-size: 1.5rem;
-    text-align: left;
-  }
-  .top-left-img {
-    width: 800px;
-  }
-}
 /* end of typografy */
 /* animation stars */
 .stars {
@@ -120,7 +90,7 @@ button {
 }
 /* global classes */
 .logo {
-  width: 180px;
+  width: 100px;
 }
 .page {
   background-color: var(--bgc-clr);
@@ -150,7 +120,7 @@ button {
 }
 .social-link {
   color: var(--txt-clr);
-  font-size: 2rem;
+  font-size: 1.5rem;
   transition: color 0.3s ease-in-out;
 }
 .social-link:hover {
@@ -175,13 +145,11 @@ button {
 .h-full {
   min-height: 100vh;
 }
-/* swiper styles */
 
-/* end of swiper styles */
 .bolt-img {
   position: absolute;
   bottom: -50px;
-  width: 400px;
+  width: 200px;
   left: 0;
   transform: translateX(-60%);
 
@@ -197,10 +165,38 @@ button {
     filter: drop-shadow(26px 26px 40px var(--text-accent-clr)) opacity(0.6);
   }
 }
-@media screen and (min-width: 900px) {
+
+@media screen and (min-width: 700px) {
   .top-left-img {
-    width: 600px;
+    width: 300px;
+    height: 300px;
+  }
+  .header-title {
+    font-size: 2.5rem;
+  }
+  .main-desc {
+    font-size: 1.2rem;
+  }
+  body .home-btn .project-btn {
+    width: 250px;
+  }
+
+  .circle {
+    width: 250px;
+    height: 250px;
   }
 }
 
-/* motion */
+@media screen and (min-width: 1500px) {
+  .header-title {
+    font-size: 3.5rem;
+  }
+  .main-desc {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .top-left-img {
+    width: 400px;
+    height: 400px;
+  }
+}

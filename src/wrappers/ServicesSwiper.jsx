@@ -3,10 +3,10 @@ const Wrapper = styled.div`
   .services-swiper {
     color: white;
     height: 250px;
-    max-width: 900px;
-    width: 100%;
+    max-width: 600px;
+    /* width: 100%; */
     @media screen and (min-width: 1200px) {
-      margin-right: 2rem;
+      /* margin-right: 2rem; */
     }
   }
 
