@@ -175,6 +175,9 @@ button {
 .h-full {
   min-height: 100vh;
 }
+/* swiper styles */
+
+/* end of swiper styles */
 .bolt-img {
   position: absolute;
   bottom: -50px;
