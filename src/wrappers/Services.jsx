@@ -1,7 +1,6 @@
 import styled from "styled-components";
 const Wrapper = styled.div`
   position: relative;
-
   .services-container {
     width: 90%;
     display: flex;
@@ -14,8 +13,7 @@ const Wrapper = styled.div`
   .header-title span {
     font-size: 2rem;
   }
-  .services-p {
-  }
+
   @media screen and (min-width: 1200px) {
     .services-container {
       flex-direction: row;

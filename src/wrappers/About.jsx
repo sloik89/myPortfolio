@@ -20,18 +20,19 @@ const Wrapper = styled.div`
     bottom: -420px;
     left: -25vh;
     display: none;
+    min-width: 400px;
     z-index: -1;
   }
   .about-text-contaniner {
     h2 {
-      font-size: 3rem;
+      font-size: 2rem;
       letter-spacing: 1px;
       text-align: center;
       margin-bottom: 2rem;
     }
     p {
       color: var(--txt-clr);
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       text-align: center;
     }
     span {
@@ -53,7 +54,7 @@ const Wrapper = styled.div`
     align-items: start;
   }
   .about-item {
-    font-size: 1.5rem;
+    font-size: 1rem;
 
     position: relative;
   }
@@ -83,14 +84,14 @@ const Wrapper = styled.div`
     width: 100%;
   }
   .about-title {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 400;
     text-align: center;
   }
   .about-icons {
     margin-top: 1rem;
     display: flex;
-    font-size: 3rem;
+    font-size: 2rem;
     align-items: center;
     gap: 1rem;
   }
@@ -148,6 +149,9 @@ const Wrapper = styled.div`
     .img-about {
       display: block;
     }
+  }
+  @media screen and (max-height: 800px) {
+    min-height: 800px;
   }
 `;
 export default Wrapper;

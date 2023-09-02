@@ -8,10 +8,12 @@
   /* --bgc-clr: #1f0761; */
   --bgc-clr: #130731;
   --bgc-clr-home: #130731;
-  --txt-clr: #ffffff;
+  --txt-clr: #c7c4d1;
   --big-screen: 900px;
+  --btn-work-clr: #291361;
   --text-accent-clr: rgb(204, 23, 23);
   --nav-bg: rgba(255, 255, 255, 0.2);
+  --hover-btn-bg: #462696;
   --transition-1-clr: #1b084e;
   --transition-2-clr: #16083d;
   --transition-3-clr: #0f0629;

@@ -24,7 +24,9 @@ const Wrapper = styled.section`
   .person {
     display: none;
   }
-
+  @media screen and (max-height: 800px) {
+    min-height: 800px;
+  }
   @media screen and (min-width: 1000px) {
     width: 100%;
     .flex-container {
