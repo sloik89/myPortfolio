@@ -10,7 +10,7 @@ import {
 import { Link } from "react-router-dom";
 const Socials = () => {
   return (
-    <div className="socials-container flex-center">
+    <div className="socials-container flex-end">
       <Link className="social-link">
         <RiYoutubeLine />
       </Link>

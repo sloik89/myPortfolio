@@ -7,9 +7,14 @@ import { Socials } from "./";
 const Header = () => {
   return (
     <Wrapper className="flex-column">
-      <Link to="/">
-        <img className="logo" src={logo} alt="" />
-      </Link>
+      <div className="logo-btn">
+        <Link to="/">
+          <img className="logo" src={logo} alt="" />
+        </Link>
+        <button className="language-switcher">
+          <span>EN </span>/ <span>PL</span>
+        </button>
+      </div>
       <div className="socials">
         <Socials />
       </div>

@@ -34,9 +34,13 @@ const Wrapper = styled.div`
     background-color: var(--btn-work-clr);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
   }
   .work-item:hover .work-item-content {
-    transform: scale(1);
+    transform: translateY(0);
   }
   .work-item-content {
     position: absolute;
@@ -44,16 +48,26 @@ const Wrapper = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    transform: scale(0);
-    /* background-color: rgba(0, 0, 0, 0.8); */
+    transform: translateY(100%);
     background: radial-gradient(
       circle,
       rgba(217, 27, 175, 1) 0%,
       rgba(217, 27, 175, 0) 100%
     );
 
-    opacity: 0.9;
+    opacity: 0.7;
     transition: 0.2s linear;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    a {
+      font-size: 3rem;
+      color: white;
+    }
+    a:hover {
+      color: black;
+    }
   }
   .work-item-img {
     img {

@@ -38,6 +38,8 @@ const WorkSlider = () => {
               <div className="work-item-img">
                 <img src={item.url} alt="" />
               </div>
+              <h3 className="item-info">{item.title}</h3>
+              <p>{item.desc}</p>
               <div className="work-item-content">
                 <a href="#">
                   <AiFillEye />
@@ -45,7 +47,6 @@ const WorkSlider = () => {
                 <a href="#">
                   <AiFillGithub />
                 </a>
-                <p className="item-info">{item.title}</p>
               </div>
             </div>
           );

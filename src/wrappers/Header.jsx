@@ -8,9 +8,7 @@ const Wrapper = styled.div`
   z-index: 6;
   gap: 1rem;
   margin: 0 auto;
-  & > * {
-    flex: 1;
-  }
+
   @media screen and (min-width: 900px) {
     flex-direction: row;
 
@@ -19,7 +17,7 @@ const Wrapper = styled.div`
       width: 150px;
     }
     .socials {
-      flex: 0;
+      flex: 1;
     }
   }
 `;
