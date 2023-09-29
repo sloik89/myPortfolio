@@ -2,7 +2,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   width: 90%;
   border: 2px solid red;
-  height: 100vh;
+  height: max(100vh, 800px);
 
   display: flex;
   margin: 0 auto;
@@ -149,9 +149,6 @@ const Wrapper = styled.div`
     .img-about {
       display: block;
     }
-  }
-  @media screen and (max-height: 800px) {
-    min-height: 800px;
   }
 `;
 export default Wrapper;

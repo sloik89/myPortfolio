@@ -17,6 +17,10 @@
   --transition-1-clr: #1b084e;
   --transition-2-clr: #16083d;
   --transition-3-clr: #0f0629;
+  --fs-small: 0.8rem;
+  --fs-medium: 1.2rem;
+  --fs-high: 2rem;
+  --fs-high-1: 3rem;
 }
 body {
   font-family: "Sora", sans-serif;
@@ -61,35 +65,37 @@ button {
   background-repeat: no-repeat;
 }
 /* typografy */
-.header-title {
-  font-size: 2rem;
-  letter-spacing: 1px;
+.header {
+  font-size: var(--fs-high);
   line-height: 1.5;
+  text-align: center;
 }
 .text-accent {
   color: var(--text-accent-clr);
 }
 .main-desc {
-  max-width: 600px;
-  font-size: 1rem;
+  max-width: 50ch;
+  font-size: var(--fs-small);
   text-align: center;
   line-height: 2;
 }
-
+@media screen and (min-width: 1000px) {
+  .header-title {
+    text-align: left;
+  }
+  .main-desc {
+    font-size: var(--fs-medium);
+  }
+  .header {
+    font-size: var(--fs-high-1);
+  }
+}
 /* end of typografy */
 /* animation stars */
 .stars {
   animation: apear infinite alternate-reverse ease-in-out 1.5s;
 }
-@keyframes apear {
-  0% {
-    transform: scale(0) translateX(0);
-  }
-  100% {
-    transform: scale(1);
-    color: yellow;
-  }
-}
+
 /* global classes */
 .logo {
   width: 100px;
@@ -164,29 +170,21 @@ button {
   animation: circleAnimate 1.4s ease-in-out infinite alternate;
 }
 /* end of global classes */
-@keyframes circleAnimate {
-  0% {
-    filter: drop-shadow(0px 0px 0px var(--text-accent-clr)) opacity(0.3);
-  }
-  100% {
-    filter: drop-shadow(26px 26px 40px var(--text-accent-clr)) opacity(0.6);
-  }
-}
 
 @media screen and (min-width: 700px) {
   .top-left-img {
     width: 300px;
     height: 300px;
   }
-  .header-title {
+  /* .header-title {
     font-size: 2.5rem;
   }
   .main-desc {
     font-size: 1.2rem;
-  }
-  body .home-btn .project-btn {
+  } */
+  /* body .home-btn .project-btn {
     width: 250px;
-  }
+  } */
 
   .circle {
     width: 250px;
@@ -195,15 +193,34 @@ button {
 }
 
 @media screen and (min-width: 1500px) {
-  .header-title {
+  /* .header-title {
     font-size: 3.5rem;
   }
   .main-desc {
     font-size: 1.5rem;
     text-align: left;
-  }
+  } */
   .top-left-img {
     width: 400px;
     height: 400px;
   }
 }
+/* animation */
+@keyframes apear {
+  0% {
+    transform: scale(0) translateX(0);
+  }
+  100% {
+    transform: scale(1);
+    color: yellow;
+  }
+}
+@keyframes circleAnimate {
+  0% {
+    filter: drop-shadow(0px 0px 0px var(--text-accent-clr)) opacity(0.3);
+  }
+  100% {
+    filter: drop-shadow(26px 26px 40px var(--text-accent-clr)) opacity(0.6);
+  }
+}
+/* end of animation */

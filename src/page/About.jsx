@@ -13,7 +13,7 @@ const About = () => {
       <Circle />
       <div className="about-info">
         <div className="about-text-contaniner">
-          <h2>
+          <h2 className="header">
             Captivating <span>stories</span> birth magnificent design.
           </h2>
           <p>

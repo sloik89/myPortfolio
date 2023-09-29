@@ -3,7 +3,7 @@ const Wrapper = styled.div`
   .project-btn {
     animation: rotate infinite 5s linear forwards;
     cursor: pointer;
-    width: 200px;
+    width: 180px;
   }
 
   .link {

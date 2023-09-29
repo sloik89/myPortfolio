@@ -8,10 +8,24 @@ const Wrapper = styled.div`
   z-index: 6;
   gap: 1rem;
   margin: 0 auto;
-
+  .logo-btn {
+    display: flex;
+    gap: 2rem;
+    button {
+    }
+  }
+  .language-switcher.active-eng {
+    span:first-child {
+      color: red;
+    }
+  }
+  .language-switcher.active-pl {
+    span:last-child {
+      color: red;
+    }
+  }
   @media screen and (min-width: 900px) {
     flex-direction: row;
-
     .logo {
       margin-left: 2rem;
       width: 150px;

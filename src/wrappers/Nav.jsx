@@ -42,7 +42,7 @@ const Wrapper = styled.nav`
     transform: translate(50%, -50%) rotate(45deg);
     z-index: -1;
   }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 700px) {
     height: 500px;
     margin: auto 0;
     flex-direction: column;
