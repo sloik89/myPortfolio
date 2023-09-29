@@ -13,6 +13,7 @@ export const AppProvider = ({ children }) => {
     console.log("language change");
     dispatch({ type: CHANGE_LANGUAGE });
   };
+  const setDarkTheme = () => {};
   return (
     <AppContext.Provider value={{ ...state, switchLang }}>
       {children}

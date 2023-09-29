@@ -17,7 +17,7 @@
   --transition-1-clr: #1b084e;
   --transition-2-clr: #16083d;
   --transition-3-clr: #0f0629;
-  --fs-small: 0.8rem;
+  --fs-small: 0.9rem;
   --fs-medium: 1.2rem;
   --fs-high: 2rem;
   --fs-high-1: 3rem;
@@ -73,18 +73,21 @@ button {
 .text-accent {
   color: var(--text-accent-clr);
 }
-.main-desc {
+.desc {
   max-width: 50ch;
   font-size: var(--fs-small);
   text-align: center;
   line-height: 2;
+  letter-spacing: 1px;
 }
+
 @media screen and (min-width: 1000px) {
   .header-title {
     text-align: left;
   }
-  .main-desc {
+  .desc {
     font-size: var(--fs-medium);
+    text-align: left;
   }
   .header {
     font-size: var(--fs-high-1);

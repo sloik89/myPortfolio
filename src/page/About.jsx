@@ -6,20 +6,29 @@ import avatar from "../assets/person2.png";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import { fadeIn } from "../utilis/variants.jsx";
+import { useGlobalContext } from "../context/AppContext";
 const About = () => {
+  const { language } = useGlobalContext();
   const [index, setIndex] = useState(0);
   return (
     <Wrapper className="about">
       <Circle />
       <div className="about-info">
         <div className="about-text-contaniner">
-          <h2 className="header">
-            Captivating <span>stories</span> birth magnificent design.
-          </h2>
-          <p>
-            10 years age, I began freelancing as a developer. SInce then, I've
-            done remote work for agencies, consulted for startups, and
-            collaborated on digital products for business and consumer use.
+          {language === "english" ? (
+            <h2 className="header">
+              Captivating <span>stories</span> birth magnificent design.
+            </h2>
+          ) : (
+            <h2 className="header">
+              Zachycające <span>historie</span> rodzą niesamowite projekty.
+            </h2>
+          )}
+
+          <p className="desc">
+            {language === "english"
+              ? "10 years ago, I began freelancing as a developer. SInce then, I ve done remote work for agencies, consulted for startups, and collaborated on digital products for business and consumer use."
+              : "10 lat temu, zaczynałem freelance jako developer. Od tamtego czasu, pracowałem zdalnie dla agencji, byłem konsultantem dla startupów oraz doradzałęm w sprawie produktów cyfrowych "}
           </p>
         </div>
         <div className="about-counters">
@@ -37,7 +46,9 @@ const About = () => {
           </div>
           <div className="count">
             <CountUp start={0} end={7} duration={5} delay={1.5} /> +
-            <p>Winning Awards</p>
+            <p>
+              {language === "english" ? "Wining Awards" : "Wygrane nagrody"}
+            </p>
           </div>
         </div>
       </div>

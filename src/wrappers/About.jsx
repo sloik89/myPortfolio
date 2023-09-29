@@ -1,9 +1,7 @@
 import styled from "styled-components";
 const Wrapper = styled.div`
-  width: 90%;
   border: 2px solid red;
   height: max(100vh, 800px);
-
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -25,22 +23,16 @@ const Wrapper = styled.div`
   }
   .about-text-contaniner {
     h2 {
-      font-size: 2rem;
-      letter-spacing: 1px;
-      text-align: center;
       margin-bottom: 2rem;
     }
     p {
       color: var(--txt-clr);
-      font-size: 1.2rem;
-      text-align: center;
     }
     span {
       color: var(--text-accent-clr);
     }
   }
   .about-container {
-    /* height: 50%; */
     border: 1px solid white;
     display: flex;
     flex-direction: column;
@@ -107,42 +99,50 @@ const Wrapper = styled.div`
       color: var(--text-accent-clr);
       flex: 1;
       text-align: center;
+      font-size: var(--fs-medium);
       span {
       }
       p {
         color: var(--txt-clr);
-        font-size: 1.2rem;
+        font-size: var(--fs-small);
       }
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 800px) {
     flex-direction: row;
 
     .about-counters {
       display: flex;
+      font-size: var(--fs-small);
     }
     .about-container {
       flex: 1;
       align-self: center;
       max-width: 900px;
+      margin-right: 3rem;
     }
     .about-info {
       flex: 1;
       padding: 2rem;
-      max-width: 900px;
+      max-width: 1200px;
     }
     .about-text-contaniner {
       h2 {
-        font-size: 4rem;
         text-align: left;
+        max-width: 800px;
       }
       p {
         text-align: left;
       }
     }
-    .about-counters {
-      font-size: 3rem;
+  }
+  @media screen and (min-width: 1200px) {
+    .about-counters .count {
+      font-size: var(--fs-high);
+      p {
+        font-size: var(--fs-medium);
+      }
     }
   }
   @media screen and (min-width: 1900px) {

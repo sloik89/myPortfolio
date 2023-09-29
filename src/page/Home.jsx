@@ -42,7 +42,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="main-desc"
+            className="desc"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
             officia.adipisicing elit. Blanditiis, officia.Lorem ipsum dolor sit

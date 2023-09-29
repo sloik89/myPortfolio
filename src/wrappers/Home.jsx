@@ -13,7 +13,6 @@ const Wrapper = styled.section`
     gap: 2rem;
     align-items: center;
     justify-content: center;
-
     padding: 0 0.5rem;
   }
 
@@ -35,7 +34,7 @@ const Wrapper = styled.section`
       padding: 0 1rem;
       align-items: start;
     }
-    .main-desc {
+    .desc {
       text-align: left;
     }
     .flex-container {
