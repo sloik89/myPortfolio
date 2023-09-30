@@ -39,6 +39,7 @@ const Wrapper = styled.section`
     }
     .flex-container {
       max-width: 1200px;
+      border: 1px solid white;
     }
     .img-container {
       position: relative;

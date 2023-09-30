@@ -25,6 +25,28 @@
 body {
   font-family: "Sora", sans-serif;
 }
+body.dark {
+  --bgc-clr: #130731;
+  --bgc-clr-home: #130731;
+  --txt-clr: #c7c4d1;
+  --big-screen: 900px;
+  --btn-work-clr: #291361;
+  --text-accent-clr: #cc1717;
+  --nav-bg: rgba(255, 255, 255, 0.2);
+  --hover-btn-bg: #462696;
+  --transition-1-clr: #1b084e;
+  --transition-2-clr: #16083d;
+  --transition-3-clr: #0f0629;
+  --fs-small: 0.9rem;
+  --fs-medium: 1.2rem;
+  --fs-high: 2rem;
+  --fs-high-1: 3rem;
+}
+body.light {
+  --bgc-clr: white;
+  --bgc-clr-home: white;
+  --txt-clr: black;
+}
 button {
   font-family: inherit;
 }
@@ -126,6 +148,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .nav {
   font-size: 25px;
@@ -159,7 +182,7 @@ button {
   height: 100%;
 }
 .h-full {
-  min-height: 100vh;
+  height: max(100vh, 800px);
 }
 
 .bolt-img {
@@ -171,6 +194,12 @@ button {
 
   filter: hue-rotate(320deg);
   animation: circleAnimate 1.4s ease-in-out infinite alternate;
+}
+.swiper-pagination-bullets {
+  /* background-color: red; */
+}
+.swiper-pagination-bullets span {
+  background-color: red;
 }
 /* end of global classes */
 

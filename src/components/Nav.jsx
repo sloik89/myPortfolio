@@ -4,9 +4,11 @@ import nav from "../utilis/nav";
 import Wrapper from "../wrappers/Nav";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { useLocation } from "react-router-dom";
+import { useGlobalContext } from "../context/AppContext";
 const Nav = () => {
   const location = useLocation();
   const [isDisabled, setIsDisabled] = useState(true);
+  const { setDarkTheme } = useGlobalContext();
   useEffect(() => {
     console.log("first");
     // time to change block links
@@ -42,7 +44,7 @@ const Nav = () => {
           </Link>
         );
       })}
-      <button className="flex-center">
+      <button className="flex-center" onClick={setDarkTheme}>
         <svg
           stroke="currentColor"
           fill="currentColor"
