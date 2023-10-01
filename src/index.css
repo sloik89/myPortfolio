@@ -8,11 +8,14 @@
   /* --bgc-clr: #1f0761; */
   --bgc-clr: #130731;
   --bgc-clr-home: #130731;
+  --red-darker-border: #661414;
   --txt-clr: #c7c4d1;
+  --txt-clr-darker: #888188;
   --big-screen: 900px;
   --btn-work-clr: #291361;
   --text-accent-clr: #cc1717;
   --nav-bg: rgba(255, 255, 255, 0.2);
+  --bgc-red-accent: #6123134d;
   --hover-btn-bg: #462696;
   --transition-1-clr: #1b084e;
   --transition-2-clr: #16083d;
@@ -44,8 +47,11 @@ body.dark {
 }
 body.light {
   --bgc-clr: white;
-  --bgc-clr-home: white;
+  --bgc-clr-home: rgb(255, 255, 255);
   --txt-clr: black;
+  --transition-1-clr: #c9c4d6;
+  --transition-2-clr: #a19dac;
+  --transition-3-clr: #807d86;
 }
 button {
   font-family: inherit;
