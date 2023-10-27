@@ -38,7 +38,7 @@ const Wrapper = styled.section`
       text-align: left;
     }
     .flex-container {
-      max-width: 1200px;
+      max-width: 1600px;
       border: 1px solid white;
     }
     .img-container {
@@ -58,6 +58,9 @@ const Wrapper = styled.section`
       z-index: 1;
       max-width: 600px;
       max-height: 600px;
+    }
+    .white-bg {
+      background-blend-mode: normal;
     }
     .img-container {
       max-width: 800px;

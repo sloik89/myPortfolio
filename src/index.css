@@ -36,6 +36,7 @@ body.dark {
   --btn-work-clr: #291361;
   --text-accent-clr: #cc1717;
   --nav-bg: rgba(255, 255, 255, 0.2);
+  --tooltip-bgc: #462696;
   --hover-btn-bg: #462696;
   --transition-1-clr: #1b084e;
   --transition-2-clr: #16083d;
@@ -52,6 +53,8 @@ body.light {
   --transition-1-clr: #c9c4d6;
   --transition-2-clr: #a19dac;
   --transition-3-clr: #807d86;
+  --nav-bg: rgba(0, 0, 0, 0.2);
+  --tooltip-bgc: #f1eaff;
 }
 button {
   font-family: inherit;

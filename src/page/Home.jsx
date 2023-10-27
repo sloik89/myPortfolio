@@ -7,7 +7,7 @@ import { fadeIn } from "../utilis/variants";
 import { motion } from "framer-motion";
 import { useGlobalContext } from "../context/AppContext";
 const Home = () => {
-  const { language } = useGlobalContext();
+  const { language, darkTheme } = useGlobalContext();
   return (
     <Wrapper className="">
       <div className="home flex-container">
@@ -68,7 +68,7 @@ const Home = () => {
           <img className="person" src={person} alt="" />
           <div
             style={{ backgroundImage: `url('${photo}')` }}
-            className="bg-splash"
+            className={`bg-splash ${!darkTheme && "white-bg"}`}
           ></div>
           <ParticleContainer />
         </motion.div>

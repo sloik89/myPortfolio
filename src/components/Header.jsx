@@ -2,16 +2,17 @@ import React from "react";
 import Wrapper from "../wrappers/Header";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo1.png";
+import logoDark from "../assets/logoDark.png";
 import { Socials } from "./";
 import { useGlobalContext } from "../context/AppContext";
 const Header = () => {
-  const { language, switchLang } = useGlobalContext();
+  const { language, switchLang, darkTheme } = useGlobalContext();
   console.log(language);
   return (
     <Wrapper className="flex-column">
       <div className="logo-btn">
         <Link to="/">
-          <img className="logo" src={logo} alt="" />
+          <img className="logo" src={darkTheme ? logo : logoDark} alt="" />
         </Link>
         <button
           onClick={switchLang}

@@ -25,9 +25,9 @@ const Wrapper = styled.nav`
     top: 50%;
     left: -135px;
     font-size: 1rem;
-    background-color: #fff;
+
     padding: 8px;
-    color: red;
+    background-color: var(--tooltip-bgc);
     display: none;
     transform: translateY(-50%);
     width: 120px;
@@ -35,7 +35,7 @@ const Wrapper = styled.nav`
   .triangle {
     width: 12px;
     height: 12px;
-    background-color: #fff;
+    background-color: var(--tooltip-bgc);
     position: absolute;
     top: 50%;
     right: 0;

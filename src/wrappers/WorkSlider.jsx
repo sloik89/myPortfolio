@@ -22,12 +22,16 @@ const Wrapper = styled.div`
     color: var(--text-accent-clr);
     background-color: var(--hover-btn-bg);
   }
+  /* gallery */
   .work-gallery {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
   }
   .work-item {
+    width: 300px;
+    min-height: 500px;
     border-radius: 1rem;
     cursor: pointer;
     padding: 1rem;
@@ -78,9 +82,9 @@ const Wrapper = styled.div`
     border-radius: 1rem;
     max-width: 500px;
     overflow: hidden;
-    height: 400px;
+    height: 300px;
   }
-  @media screen and (min-width: 800px) {
+  /* @media screen and (min-width: 800px) {
     .work-gallery {
       flex-direction: row;
       flex-wrap: wrap;
@@ -89,6 +93,6 @@ const Wrapper = styled.div`
     .work-item {
       width: 400px;
     }
-  }
+  } */
 `;
 export default Wrapper;

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/paint.png";
+import img from "../assets/splash.png";
 const TopLeftImg = () => {
   return (
     <div
